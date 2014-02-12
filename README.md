@@ -1,8 +1,8 @@
 Introduction
 ====
-This module for proxy_store、fastcgi_store、scgi_store、uwsgi_store extension, provides multiple directory  to store,  add or delete the directory dynamically .
+This module for proxy_store | fastcgi_store | scgi_store | uwsgi_store extension, provides multiple directory to store and add or delete the directory dynamically.
 
-(Dynamically add directory needs to be created in advance and the directory permissions must be the worker can access)
+(Dynamically add directory needs to be created in advance and the directory permissions must be the worker can access.)
 
 
 Requirements
@@ -13,7 +13,8 @@ Requirements
 
 Installation
 ====
-./configure --add-module=/path/to/ngx_http_store_plusplus --add-module=/path/to/ngx_consistent_hash
+`./configure --add-module=/path/to/ngx_http_store_plusplus                
+             --add-module=/path/to/ngx_consistent_hash`   
 
 
 
