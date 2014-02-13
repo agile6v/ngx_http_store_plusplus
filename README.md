@@ -17,6 +17,42 @@ Installation
              --add-module=/path/to/ngx_consistent_hash`   
 
 
+Directives
+====
+
+store_plusplus
+--------------------
+**syntax:** *store_plusplus;*
+
+**default:** *-*
+
+**context:** *location*
+
+Turns on directory add or delete interface.
+
+store_plusplus_conhash_zone
+--------------------
+**syntax:** *store_plusplus_conhash_zone keys_zone=name:size [vnodecnt=count]*
+
+**default:** *-*
+
+**context:** *http*
+
+Sets the share memory name、share memory size and vnode count of the consistent hash.
+
+If you explicitly specifly the vnodecnt, it cannot be more than 10000. By default, vnodecnt is set to 100.
+
+NOTE: If you want to use the ngx_consistent_hash module must be defined in a similar directive.
+
+store_plusplus_dir
+--------------------
+**syntax:** *store_plusplus_dir { ... }*
+
+**default:** *-*
+
+**context:** *http*
+
+Storage directory listing.
 
 Sample Configuration
 ====
