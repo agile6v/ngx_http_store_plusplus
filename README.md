@@ -1,4 +1,4 @@
-Introduction
+About
 ====
 This module for proxy_store | fastcgi_store | scgi_store | uwsgi_store extension, provides multiple directory to store and add or delete the directory dynamically.
 
